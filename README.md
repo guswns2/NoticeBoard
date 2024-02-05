@@ -6,8 +6,8 @@
 
 
 ## ⚙ 개발 환경
-- Web : Java, jsp
-- Server : Spring (v4.3.14), Tomcat (v8.5)
+- Web : jsp
+- Server : Java (v8), Spring (v4.3.14), Tomcat (v8.5)
 - DataBase : PostgreSQL
 - Code Editor : STS4, DBeaver
 
