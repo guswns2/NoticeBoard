@@ -1,4 +1,4 @@
-package com.arian.noticeboard.Controller;
+package com.jhj.noticeboard.Controller;
 
 
 import java.util.Date;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.arian.noticeboard.DTO.CommentDto;
-import com.arian.noticeboard.DTO.NoticeDto;
-import com.arian.noticeboard.Service.CommentServiceImp;
-import com.arian.noticeboard.Service.NoticeServiceImpl;
+import com.jhj.noticeboard.DTO.CommentDto;
+import com.jhj.noticeboard.DTO.NoticeDto;
+import com.jhj.noticeboard.Service.CommentServiceImp;
+import com.jhj.noticeboard.Service.NoticeServiceImpl;
 
 
 /**
@@ -32,7 +32,7 @@ public class NoticeController {
 	private NoticeDto dto;
 	Date date;
 	
-	// 게시판 목록
+	//  게시판 목록
 	// http://localhost:9090/noticeboard/
 	@RequestMapping(value = "/")
 	public String NoticeBoard(Model model, HttpSession session) throws Exception {
@@ -67,14 +67,14 @@ public class NoticeController {
 	// 게시글 조회
 	@RequestMapping(value = "/ViewWrite", method = RequestMethod.GET)
 	private void ViewWrite(int pstNum,  Model model, HttpSession session) throws Exception {
-		// 로그인 아이디로 조회
+		// 濡쒓렇�씤 �븘�씠�뵒濡� 議고쉶
 		dto = service.view(pstNum);
 		model.addAttribute("view", dto);
 		
 		logID = (String) session.getAttribute("logID");
 		model.addAttribute("logID", logID);
 		
-		// 댓글 조회
+		// �뙎湲� 議고쉶
 		List<CommentDto> cmtList = cmtService.cmtList(pstNum);
 		model.addAttribute("cmtList", cmtList);
 		

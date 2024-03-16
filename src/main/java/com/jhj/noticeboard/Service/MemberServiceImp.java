@@ -1,10 +1,10 @@
-package com.arian.noticeboard.Service;
+package com.jhj.noticeboard.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.arian.noticeboard.DAO.MemberDaoImp;
-import com.arian.noticeboard.DTO.MemberDto;
+import com.jhj.noticeboard.DAO.MemberDaoImp;
+import com.jhj.noticeboard.DTO.MemberDto;
 
 @Service
 public class MemberServiceImp implements MemberService{

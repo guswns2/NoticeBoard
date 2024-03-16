@@ -1,4 +1,4 @@
-package com.arian.noticeboard.Controller;
+package com.jhj.noticeboard.Controller;
 
 import javax.servlet.http.HttpSession;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.ui.Model;
 
-import com.arian.noticeboard.DTO.MemberDto;
-import com.arian.noticeboard.Service.MemberServiceImp;
+import com.jhj.noticeboard.DTO.MemberDto;
+import com.jhj.noticeboard.Service.MemberServiceImp;
 
 @Controller
 public class MemberController {
@@ -39,7 +39,7 @@ public class MemberController {
 		}
 	}
 	
-	// 로그아웃		
+	// 로그아웃	
 	@RequestMapping(value="/Logout", method = RequestMethod.GET)
 	public String Logout(HttpSession session) throws Exception{
 		session.invalidate();

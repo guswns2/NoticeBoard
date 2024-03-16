@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/java/com/jhj/noticeboard/Controller/CommentController.java=UTF-8
+encoding//src/main/java/com/jhj/noticeboard/Controller/MemberController.java=UTF-8
+encoding//src/main/java/com/jhj/noticeboard/Controller/NoticeController.java=UTF-8
 encoding//src/main/webapp/WEB-INF/views/NoticeBoard.jsp=UTF-8

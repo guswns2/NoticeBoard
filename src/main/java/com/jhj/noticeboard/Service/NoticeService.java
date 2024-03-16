@@ -1,8 +1,8 @@
-package com.arian.noticeboard.Service;
+package com.jhj.noticeboard.Service;
 
 import java.util.List;
 
-import com.arian.noticeboard.DTO.NoticeDto;
+import com.jhj.noticeboard.DTO.NoticeDto;
 
 public interface NoticeService {
 	public List sel() throws Exception;

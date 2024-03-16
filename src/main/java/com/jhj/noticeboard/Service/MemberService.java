@@ -1,6 +1,6 @@
-package com.arian.noticeboard.Service;
+package com.jhj.noticeboard.Service;
 
-import com.arian.noticeboard.DTO.MemberDto;
+import com.jhj.noticeboard.DTO.MemberDto;
 
 public interface MemberService {
 	public String selID(MemberDto dto) throws Exception;

@@ -4,7 +4,7 @@
 
 <mapper namespace="cmtsql">
 	<!-- 게시글 댓글리스트 조회 -->
-	<select id="selCmt" resultType="com.arian.noticeboard.DTO.CommentDto">
+	<select id="selCmt" resultType="com.jhj.noticeboard.DTO.CommentDto">
 		select * from commentInfo where pstNum = #{pstNum} order by cmtTime asc
 	</select>
 	

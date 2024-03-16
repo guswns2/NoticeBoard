@@ -1,4 +1,4 @@
-package com.arian.noticeboard.DTO;
+package com.jhj.noticeboard.DTO;
 
 import java.util.Date;
 

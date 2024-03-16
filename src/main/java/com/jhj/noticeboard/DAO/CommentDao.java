@@ -1,8 +1,8 @@
-package com.arian.noticeboard.DAO;
+package com.jhj.noticeboard.DAO;
 
 import java.util.List;
 
-import com.arian.noticeboard.DTO.CommentDto;
+import com.jhj.noticeboard.DTO.CommentDto;
 
 public interface CommentDao {
 	public List cmtList(int pstNum) throws Exception;

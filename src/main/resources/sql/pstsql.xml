@@ -4,7 +4,7 @@
 
 <mapper namespace="pstsql">
 	<!-- 게시판 목록 조회 -->
-	<select id="sel" resultType="com.arian.noticeboard.DTO.NoticeDto">
+	<select id="sel" resultType="com.jhj.noticeboard.DTO.NoticeDto">
 		select * from postinfo order by pstNum asc
 	</select>
 	
@@ -18,7 +18,7 @@
 	<update id="upView">
 		update postinfo set pstView = pstView+1 where pstNum=#{pstNum}
 	</update>
-	<select id="view" resultType="com.arian.noticeboard.DTO.NoticeDto">
+	<select id="view" resultType="com.jhj.noticeboard.DTO.NoticeDto">
 		select * from postinfo where pstNum=#{pstNum}
 	</select>
 	

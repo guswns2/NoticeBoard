@@ -1,11 +1,11 @@
-package com.arian.noticeboard.DAO;
+package com.jhj.noticeboard.DAO;
 
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.arian.noticeboard.DTO.MemberDto;
+import com.jhj.noticeboard.DTO.MemberDto;
 
 @Repository
 public class MemberDaoImp implements MemberDao{

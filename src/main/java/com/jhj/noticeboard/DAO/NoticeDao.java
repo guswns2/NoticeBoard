@@ -1,8 +1,8 @@
-package com.arian.noticeboard.DAO;
+package com.jhj.noticeboard.DAO;
 
 import java.util.List;
 
-import com.arian.noticeboard.DTO.NoticeDto;
+import com.jhj.noticeboard.DTO.NoticeDto;
 
 
 public interface NoticeDao {

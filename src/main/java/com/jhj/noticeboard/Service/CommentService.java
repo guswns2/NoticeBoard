@@ -1,12 +1,12 @@
-package com.arian.noticeboard.Service;
+package com.jhj.noticeboard.Service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.arian.noticeboard.DAO.CommentDaoImp;
-import com.arian.noticeboard.DTO.CommentDto;
+import com.jhj.noticeboard.DAO.CommentDaoImp;
+import com.jhj.noticeboard.DTO.CommentDto;
 
 public interface CommentService {
 	public List cmtList(int pstNum) throws Exception;
