@@ -5,7 +5,7 @@
 <mapper namespace="pstsql">
 	<!-- 게시판 목록 조회 -->
 	<select id="sel" resultType="com.jhj.noticeboard.DTO.NoticeDto">
-		select * from postinfo order by pstNum asc
+		select * from postInfo order by pstNum asc
 	</select>
 	
 	<!-- 게시글 등록 -->
@@ -16,20 +16,20 @@
 	
 	<!-- 게시글 내용 조회 -->
 	<update id="upView">
-		update postinfo set pstView = pstView+1 where pstNum=#{pstNum}
+		update postInfo set pstView = pstView+1 where pstNum=#{pstNum}
 	</update>
 	<select id="view" resultType="com.jhj.noticeboard.DTO.NoticeDto">
-		select * from postinfo where pstNum=#{pstNum}
+		select * from postInfo where pstNum=#{pstNum}
 	</select>
 	
 	<!-- 게시글 수정 -->
 	<update id="upd">
-		update postinfo set pstTitle = #{pstTitle}, pstContent = #{pstContent} 
+		update postInfo set pstTitle = #{pstTitle}, pstContent = #{pstContent} 
 		where pstNum = #{pstNum}
 	</update>
 	
 	<!-- 게시글 삭제 -->
 	<delete id="del">
-		delete from postinfo where pstNum = #{pstNum}
+		delete from postInfo where pstNum = #{pstNum}
 	</delete>
 </mapper> 
