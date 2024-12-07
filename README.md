@@ -1,5 +1,5 @@
 ## 🖥 프로젝트 소개
-- 주제 : 게시판 Web
+- 주제 : 게시판 
 - 팀명 : 개인
 - 인원 : 1명
 - 개발 기간 : 2022.05 ~ 2023.05 (약 1주)
@@ -7,7 +7,7 @@
 
 ## ⚙ 개발 환경
 - Web : jsp
-- Server : Java (v8), Spring (v4.3.14), Tomcat (v8.5)
+- Server : Java (v1.8), Tomcat (v9.0), Spring (v4.3.2)
 - DataBase : PostgreSQL
 - Code Editor : STS4, DBeaver
 
@@ -25,5 +25,4 @@
 
 
 ## 🔁 프로젝트 설치 및 실행
-- 프로그램 실행
-  - 프로젝트 우클릭 > Run as > Run on Server
+- https://www.notion.so/NoticeBoard-131ffb5eb35680d480aec5a7fe08f861?pvs=4
